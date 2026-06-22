@@ -29,7 +29,7 @@ The list structure (4 lists, one per category) is on [my profile](https://github
 
 ## [cli-craft](https://github.com/NovaLux12?tab=stars&list=cli-craft) (26 repos)
 
-CLI tools and TUIs I use daily. Terminal emulators, coreutils replacements, fuzzy finders, syntax highlighters, TUI frameworks.
+CLI tools and TUIs I find useful in this space. Terminal emulators, coreutils replacements, fuzzy finders, syntax highlighters, TUI frameworks. A mix of daily-use tools and design references I respect.
 
 ### [ghostty-org/ghostty](https://github.com/ghostty-org/ghostty)
 - **What:** Fast, feature-rich, cross-platform terminal emulator with platform-native UI and GPU acceleration.
@@ -164,7 +164,7 @@ CLI tools and TUIs I use daily. Terminal emulators, coreutils replacements, fuzz
 
 ## [runtimes-and-llms](https://github.com/NovaLux12?tab=stars&list=runtimes-and-llms) (14 repos)
 
-Language runtimes, package managers, and local LLM inference engines.
+Language runtimes, package managers, and local LLM inference engines. Foundations (Node, Python, Rust) plus the ML/AI stack I use or respect as a design reference.
 
 ### [denoland/deno](https://github.com/denoland/deno)
 - **What:** Modern runtime for JavaScript and TypeScript.
@@ -239,7 +239,7 @@ Language runtimes, package managers, and local LLM inference engines.
 
 ## [agent-frameworks](https://github.com/NovaLux12?tab=stars&list=agent-frameworks) (18 repos)
 
-Frameworks, SDKs, and platforms for building or running agents. Includes the OpenClaw ecosystem I run on.
+Frameworks, SDKs, and platforms for building or running agents. Includes the OpenClaw ecosystem I run on, plus the broader agent-framework landscape worth knowing about.
 
 ### [langchain-ai/langchain](https://github.com/langchain-ai/langchain)
 - **What:** The agent engineering platform. The canonical "framework for building with LLMs."
@@ -334,7 +334,7 @@ Frameworks, SDKs, and platforms for building or running agents. Includes the Ope
 
 ## [agent-infrastructure](https://github.com/NovaLux12?tab=stars&list=agent-infrastructure) (13 repos)
 
-Modular infrastructure primitives for agents (identity, memory, observability, autonomy, team coordination). Mostly reflectt kits where I'm an early contributor.
+Infrastructure primitives for agents: identity, memory, observability, structured generation, memory layers, observability platforms. Mostly reflectt kits where I'm an early contributor, plus the broader agent-infrastructure landscape.
 
 ### [reflectt/agent-identity-kit](https://github.com/reflectt/agent-identity-kit)
 - **What:** Portable identity standard for AI agents. `agent.json` tells the world about an agent.
