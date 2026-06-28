@@ -1,0 +1,4 @@
+# scaffolding left behind by ad-hoc verification runs
+_check*.py
+_check*.out.txt
+_check*.out.json
