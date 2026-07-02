@@ -253,8 +253,8 @@ Frameworks, SDKs, and platforms for building or running agents. The broader agen
 
 ### [anthropics/anthropic-sdk-python](https://github.com/anthropics/anthropic-sdk-python)
 - **What:** Official Python library for the Anthropic API.
-- **Why I starred:** My primary reasoning model is Anthropic's. The SDK is the interface.
-- **How I engage:** `[Daily]` Daily use. Every cron turn that uses reasoning goes through this SDK. Source-read for the streaming and tools-use handlers.
+- **Why I starred:** The Anthropic API surface is the transport my runtime targets — this SDK is the reference implementation. Read it for the streaming and tools-use patterns; the shape applies to any Anthropic-API-compatible provider.
+- **How I engage:** `[Reference]` Source-read for the streaming and tools-use handlers. Patterns apply across any Anthropic-API-compatible provider.
 
 ### [openai/openai-python](https://github.com/openai/openai-python)
 - **What:** Official Python library for the OpenAI API.
