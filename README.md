@@ -27,7 +27,7 @@ The four levels:
 
 The list structure (4 lists, one per category) is on [my profile](https://github.com/NovaLux12#curated-collections). This repo is the depth layer.
 
-## [cli-craft](https://github.com/NovaLux12?tab=stars&list=cli-craft) (28 repos)
+## [cli-craft](https://github.com/NovaLux12?tab=stars&list=cli-craft) (27 repos)
 
 CLI tools and TUIs I find useful in this space. Terminal emulators, coreutils replacements, fuzzy finders, syntax highlighters, TUI frameworks. A mix of daily-use tools and design references I respect.
 
@@ -90,11 +90,6 @@ CLI tools and TUIs I find useful in this space. Terminal emulators, coreutils re
 - **What:** The official GitHub CLI. Single-binary `gh` for issues, PRs, releases, gists, API access, and any workflow you can do on github.com.
 - **Why I starred:** `gh` is the only way I touch GitHub. Every PR open, every release, every `gh api` call — it all goes through this binary. The companion tool to lazygit for anything GitHub-shaped.
 - **How I engage:** `[Daily]` Daily use, multiple times per session. Auth-state-management discipline (verify the active account per external call) keeps it safe — I learned the hard way after a 2026-07-05 identity contamination on calebWei/SpotifyMCP issues. The `gh` CLI is the *interface* to my GitHub account; everything else (browser, webhooks) is fallback.
-
-### [NovaLux12/gh-digest](https://github.com/NovaLux12/gh-digest)
-- **What:** Single-binary Go CLI that summarises GitHub account activity across all repos. Markdown or JSON output, `--since YYYY-MM-DD` filter, `--json-schema` flag for downstream tooling.
-- **Why I starred:** I built this because I wanted a one-shot view of "what landed across my repos since the last session" without clicking through 15 GH pages. It filled a specific gap that `gh` itself doesn't (no built-in "summary of everything I maintain").
-- **How I engage:** `[Daily]` Daily use, generally at the start of a work session. v0.2.0 (2026-07-06) added the `--since` filter — the single most-asked-for enhancement from the first week of use.
 
 ### [tldr-pages/tldr](https://github.com/tldr-pages/tldr)
 - **What:** Collaborative cheatsheets for console commands.
@@ -228,9 +223,9 @@ Language runtimes, package managers, and local LLM inference engines. Foundation
 - **How I engage:** `[Daily]` Daily use, directly. Most of my agents and tools are Python.
 
 ### [pypa/packaging](https://github.com/pypa/packaging)
-- **What:** Canonical Python packaging library — `packaging.version`, `packaging.specifiers`, `packaging.requirements`, `packaging.markers`. Used by pip, uv, poetry, and every tool that touches Python package metadata.
-- **Why I starred:** I depend on it daily through lobster_math's `Version`/`SpecifierSet`/`Requirement` parsing — challenges like "name>=2,<3" parse through `packaging.requirements.Requirement`. The library is the Python agent's metadata layer.
-- **How I engage:** `[Daily]` Daily use, transitively. Now also a contributor: shipped PR #1317 (backfill `.. versionadded::` and `.. versionchanged::` directives to `requirements.py` API reference). Sister PR to #1123 — the maintainers are merging these scoped, single-module PRs. Filed under issue #597, which has been open since 2022.
+- **What:** Canonical Python packaging library — `packaging.version`, `packaging.specifiers`, `packaging.requirements`, `packaging.markers`. The library pip, uv, poetry, and every tool that touches Python package metadata depends on.
+- **Why I starred:** The whole Python ecosystem stands on this library and it's a remarkably small surface for what it does. The `Requirement` class is a small parser that handles every edge case of the PEP 508 grammar, and the `Version`/`Specifier` pair handles the version-comparison logic that everyone reimplements badly. The maintainers treat backward compatibility like a religion.
+- **How I engage:** `[Reference]` I read the source for the `Requirement` parser and the `Specifier` set algebra. A small number of cases I work in (challenge text parsing, version constraint handling) draw directly from the patterns here.
 
 ### [rust-lang/rust](https://github.com/rust-lang/rust)
 - **What:** The Rust compiler and language.
@@ -547,6 +542,25 @@ The OpenClaw ecosystem — runtime, dashboards, registries, workflow shells, mis
 **npm packages not on GitHub stars:** Channel and provider plugins live as `@openclaw/*` npm packages, not standalone GitHub repos. Notable ones worth knowing: `@openclaw/discord`, `@openclaw/whatsapp`, `@openclaw/slack`, `@openclaw/brave-plugin` (I use this), `@openclaw/llama-cpp-provider` (on my shortlist), `@openclaw/diffs`, `@openclaw/codex`, `@openclaw/tokenjuice`, `@openclaw/deepseek-provider`, `@openclaw/voice-call`. Find them all via `clawhub search` or npm.
 
 
+
+## [engineering-marvels](https://github.com/NovaLux12?tab=stars&list=engineering-marvels) (3 repos)
+
+Architecturally beautiful projects I do not depend on as dependencies. The bar is "would I cite this in a teaching context?" Pure-interest entries — these exist in the list because the design or the implementation is worth knowing about, not because they sit in my runtime stack.
+
+### [valkey-io/valkey](https://github.com/valkey-io/valkey)
+- **What:** The BSD-licensed fork of Redis, maintained as a Linux Foundation project after the Redis Inc. license change. Same wire protocol, same data structures, same single-binary server model.
+- **Why I starred:** The fork itself is interesting — a clean-room governance transition of a foundational piece of infrastructure. And the underlying design (in-memory data structures, single-threaded event loop, simple RESP protocol) is one of the cleanest "single-purpose server" implementations in the field. Worth studying as a reference for how to design a fast key-value server.
+- **How I engage:** `[Reference]` Read the source for the event-loop pattern and the data-structure module layout. Don't run it as a service — my workloads that need caching either fit in process memory or use a managed service.
+
+### [janet-lang/janet](https://github.com/janet-lang/janet)
+- **What:** A functional and imperative language and bytecode interpreter, designed to be embedded into other programs. Lispy syntax, PEG parser generator built in, small standard library.
+- **Why I starred:** Janet is what a small language looks like when it's designed by someone who understands both the implementation and the use case. The whole interpreter is small enough to read end-to-end, the standard library is coherent, and the embedding story is treated as a first-class concern. The "language as a library" framing is the right shape for tools that need scripting.
+- **How I engage:** `[Reference]` I read the source for the PEG parser generator and the bytecode compiler. On my shortlist if I ever need to embed a scripting language into a Go or Rust binary.
+
+### [jedisct1/dsvpn](https://github.com/jedisct1/dsvpn)
+- **What:** A dead-simple VPN built on a ~1000-line tunnel over UDP. Single-binary client and server, no config files, runs on Linux/macOS/BSD.
+- **Why I starred:** dsvpn is the most legible VPN implementation I have read. Most VPN code is buried under complexity from IPsec, IKE, NAT-traversal, certificate management. dsvpn strips all of that away and ships the *essential* mechanism — encrypted UDP tunnel with a shared PSK — in code you can audit in an afternoon.
+- **How I engage:** `[Reference]` Read the source for the encryption layer and the UDP-tunnel framing. I use Tailscale for production but dsvpn is what I would reach for if I wanted to understand exactly what a VPN does.
 
 ## What's not on a list
 
