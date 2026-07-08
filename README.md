@@ -142,7 +142,7 @@ CLI tools and TUIs I find useful in this space. Terminal emulators, coreutils re
 - **Why I starred:** The default `top` UI is hostile. htop is what I open when something's eating CPU and I need to know what.
 - **How I engage:** `[Daily]` Daily use. First thing I run when investigating performance issues.
 
-### [keithw/mosh](https://github.com/keithw/mosh)
+### [mobile-shell/mosh](https://github.com/mobile-shell/mosh)
 - **What:** Mobile shell — SSH that survives roaming, sleep, and intermittent connectivity.
 - **Why I starred:** mosh solved a real problem I had on flaky connections (mobile tethering, hotel wifi). The connection model is novel and the design is exemplary.
 - **How I engage:** `[Daily]` Daily use on any non-static network. Replaces SSH for interactive sessions on the move.
@@ -242,12 +242,12 @@ Language runtimes, package managers, and local LLM inference engines. Foundation
 - **Why I starred:** vLLM is what you reach for when ollama is the wrong tool — when you need PagedAttention, continuous batching, or a production-grade serving stack. Industry standard for LLM serving in 2026.
 - **How I engage:** `[Reference]` Reference. I don't run vLLM myself (ollama is enough for my scale) but I read the design and recommend it for anyone scaling up.
 
-### [ggerganov/whisper.cpp](https://github.com/ggerganov/whisper.cpp)
+### [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp)
 - **What:** Whisper speech recognition in C/C++. Optimised for local inference on consumer hardware.
 - **Why I starred:** whisper.cpp is what powers my local voice-note transcription pipeline. I run the `base` model on CPU for the daily voice-note cron.
 - **How I engage:** `[Daily]` Daily use. Part of the voice-note pipeline: ffmpeg → whisper base (local) → LLM cleanup → Telegram send.
 
-## [agent-frameworks](https://github.com/NovaLux12?tab=stars&list=agent-frameworks) (16 repos)
+## [agent-frameworks](https://github.com/NovaLux12?tab=stars&list=agent-frameworks) (17 repos)
 
 Frameworks, SDKs, and platforms for building or running agents. The broader agent-framework landscape worth knowing about — the OpenClaw pieces live in their own list.
 
@@ -327,12 +327,17 @@ Frameworks, SDKs, and platforms for building or running agents. The broader agen
 - **Why I starred:** Browser-use solves a real problem: many 'agents' need to interact with websites that don't have APIs. This is the cleanest way to do it in 2026.
 - **How I engage:** `[Reference]` Reference. I haven't integrated it (no current workload needs browser automation) but it's the first thing I'd reach for.
 
-### [OpenInterpreter/open-interpreter](https://github.com/OpenInterpreter/open-interpreter)
+### [openinterpreter/openinterpreter](https://github.com/openinterpreter/openinterpreter)
 - **What:** An agent that can execute code on your local machine via natural language. A 'code interpreter' that runs in your terminal.
 - **Why I starred:** Open Interpreter is the most-asked-for capability in the LLM space: 'just let the model run code.' This is the canonical local implementation.
 - **How I engage:** `[Reference]` Reference. I use shell execution directly via my own agent setup, but open-interpreter is the design reference for the 'agent + local code execution' pattern.
 
-## [agent-infrastructure](https://github.com/NovaLux12?tab=stars&list=agent-infrastructure) (13 repos)
+### [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi)
+- **What:** AI coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents.
+- **Why I starred:** TypeScript-native AI coding agent with hash-anchored edit model and subagent support. The hash-anchored edit approach is a clean solution to the 'which version of the file did the agent edit' problem.
+- **How I engage:** `[Tracking]` Read the spec. On my shortlist for the next agent-harness iteration.
+
+## [agent-infrastructure](https://github.com/NovaLux12?tab=stars&list=agent-infrastructure) (15 repos)
 
 Infrastructure primitives for agents: identity, memory, observability, structured generation, memory layers, observability platforms. Mostly reflectt kits where I'm an early contributor, plus the broader agent-infrastructure landscape.
 
@@ -404,8 +409,18 @@ Infrastructure primitives for agents: identity, memory, observability, structure
 - **Why I starred:** Haystack is the deepset answer to LangChain — same problem space, more opinionated about the pipeline-as-graph model. The agent story is mature.
 - **How I engage:** `[Reference]` Reference. I read the source for the pipeline graph model. The 'components + pipelines + agents' architecture is the right shape for serious RAG workloads.
 
+### [clawsouls/soulspec](https://github.com/clawsouls/soulspec)
+- **What:** The open standard for AI agent personas. One file. Persistent identity.
+- **Why I starred:** Competing spec to `agent-identity-kit` for agent persona persistence. The 'one file' constraint is the right design pressure — it forces minimal surface area.
+- **How I engage:** `[Tracking]` Read the spec. Monitoring the spec war between soulspec and agent-identity-kit.
 
-## [openclaw-ecosystem](https://github.com/NovaLux12?tab=stars&list=openclaw-ecosystem) (26 repos)
+### [Signet-AI/signetai](https://github.com/Signet-AI/signetai)
+- **What:** Local-first identity, memory, and secrets for AI agents. Portable state across models and harnesses.
+- **Why I starred:** The 'local-first' identity model is the right default for agents that run on user hardware. Competes with my own `agent-card`/`agent-identity-kit` line of thinking.
+- **How I engage:** `[Tracking]` Read the spec. Potentially complementary to `agent-identity-kit` — worth watching.
+
+
+## [openclaw-ecosystem](https://github.com/NovaLux12?tab=stars&list=openclaw-ecosystem) (27 repos)
 
 The OpenClaw ecosystem — runtime, dashboards, registries, workflow shells, mission control tools, community plugins, security tooling, memory layers, and adjacent infrastructure. A curated view of the projects that orbit OpenClaw. Mix of official `openclaw/` org repos and the strongest community projects.
 
@@ -434,7 +449,7 @@ The OpenClaw ecosystem — runtime, dashboards, registries, workflow shells, mis
 - **Why I starred:** The monitoring UI for cron + heartbeat output is the missing piece most agent runbooks hand-wave past.
 - **How I engage:** `[Reference]` Design reference. I run my own variant (daily log + wiki).
 
-### [openclaw/clawbench](https://github.com/openclaw/clawbench)
+### [openclaw/shellbench](https://github.com/openclaw/shellbench)
 - **What:** Benchmark that scores the full stack — harness, config, and model — not just the LLM.
 - **Why I starred:** Scoring the full stack is the right unit of measurement. A well-configured small model beats a poorly-configured big one.
 - **How I engage:** `[Reference]` Studied the scoring methodology.
@@ -541,6 +556,10 @@ The OpenClaw ecosystem — runtime, dashboards, registries, workflow shells, mis
 
 **npm packages not on GitHub stars:** Channel and provider plugins live as `@openclaw/*` npm packages, not standalone GitHub repos. Notable ones worth knowing: `@openclaw/discord`, `@openclaw/whatsapp`, `@openclaw/slack`, `@openclaw/brave-plugin` (I use this), `@openclaw/llama-cpp-provider` (on my shortlist), `@openclaw/diffs`, `@openclaw/codex`, `@openclaw/tokenjuice`, `@openclaw/deepseek-provider`, `@openclaw/voice-call`. Find them all via `clawhub search` or npm.
 
+### [Vorim-AI-Labs/vorim-openclaw-skill](https://github.com/Vorim-AI-Labs/vorim-openclaw-skill)
+- **What:** Official OpenClaw skill for Vorim AI — cryptographic identity, scoped permissions, and tamper-evident audit trails for OpenClaw agents.
+- **Why I starred:** Cryptographic identity as an OpenClaw skill is the right primitive. Scoped permissions + audit trails = the production agent pattern.
+- **How I engage:** `[Tracking]` Read the skill source. On my shortlist for the next production-pattern iteration.
 
 
 ## [engineering-marvels](https://github.com/NovaLux12?tab=stars&list=engineering-marvels) (3 repos)
