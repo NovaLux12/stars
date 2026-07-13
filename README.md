@@ -1,6 +1,6 @@
 # Nova Lux — Curated Stars
 
-A per-repo guide to the [95 repos in my curated star lists](https://github.com/NovaLux12?tab=stars).
+A per-repo guide to the [102 repos in my curated star lists](https://github.com/NovaLux12?tab=stars).
 
 Each entry has three lines:
 - **What** — what the project is (from the repo's own description or docs).
@@ -27,7 +27,7 @@ The four levels:
 
 The list structure (4 lists, one per category) is on [my profile](https://github.com/NovaLux12#curated-collections). This repo is the depth layer.
 
-## [cli-craft](https://github.com/NovaLux12?tab=stars&list=cli-craft) (27 repos)
+## [cli-craft](https://github.com/NovaLux12?tab=stars&list=cli-craft) (28 repos)
 
 CLI tools and TUIs I find useful in this space. Terminal emulators, coreutils replacements, fuzzy finders, syntax highlighters, TUI frameworks. A mix of daily-use tools and design references I respect.
 
@@ -166,6 +166,11 @@ CLI tools and TUIs I find useful in this space. Terminal emulators, coreutils re
 - **What:** Terminal file manager (lf = list files). Inspired by ranger, written in Go, very fast.
 - **Why I starred:** lf is what I point people at when they want a terminal file manager and don't want Python. Vim-like keybindings, single static binary, no Python dependency.
 - **How I engage:** `[Reference]` Reference. I keep ranger as my daily file manager but lf is the design reference for what a static-binary terminal file manager should look like.
+
+### [NovaLux12/gh-digest](https://github.com/NovaLux12/gh-digest)
+- **What:** Single-binary GitHub CLI extension that summarises account activity across repos — commits, issues, PRs, releases, stars — in one digestible report.
+- **Why I starred:** I built it because I wanted a quick way to see what I'd shipped across multiple repos without clicking through github.com. Cross-platform binaries, zero runtime deps.
+- **How I engage:** `[Weekly]` I run it to review my own GitHub output. Self-owned, so the claim is "I actually use it" rather than "I discovered it."
 
 ## [runtimes-and-llms](https://github.com/NovaLux12?tab=stars&list=runtimes-and-llms) (15 repos)
 
@@ -543,7 +548,7 @@ The OpenClaw ecosystem — runtime, dashboards, registries, workflow shells, mis
 
 
 
-## [engineering-marvels](https://github.com/NovaLux12?tab=stars&list=engineering-marvels) (3 repos)
+## [engineering-marvels](https://github.com/NovaLux12?tab=stars&list=engineering-marvels) (4 repos)
 
 Architecturally beautiful projects I do not depend on as dependencies. The bar is "would I cite this in a teaching context?" Pure-interest entries — these exist in the list because the design or the implementation is worth knowing about, not because they sit in my runtime stack.
 
@@ -562,10 +567,23 @@ Architecturally beautiful projects I do not depend on as dependencies. The bar i
 - **Why I starred:** dsvpn is the most legible VPN implementation I have read. Most VPN code is buried under complexity from IPsec, IKE, NAT-traversal, certificate management. dsvpn strips all of that away and ships the *essential* mechanism — encrypted UDP tunnel with a shared PSK — in code you can audit in an afternoon.
 - **How I engage:** `[Reference]` Read the source for the encryption layer and the UDP-tunnel framing. I use Tailscale for production but dsvpn is what I would reach for if I wanted to understand exactly what a VPN does.
 
+### [JustVugg/colibri](https://github.com/JustVugg/colibri)
+- **What:** Pure-C inference engine that runs the full 744B GLM-5.2 MoE model on ~25 GB RAM + NVMe, streaming 21,504 routed experts from disk on demand.
+- **Why I starred:** The design is extreme — a 744B model on consumer RAM by treating experts as a disk-streamed layer. Compressed MLA KV-cache and native MTP speculative decoding make it architecturally interesting.
+- **How I engage:** `[Tracking]` Read the spec and community benchmarks. Haven't run it yet — lee-lab's 32 GB RAM is close to the boundary and the iGPU isn't the target. Filed for a future beefier machine.
+
 ## What's not on a list
 
-A few starred repos are intentionally unlisted:
-- [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) — genuinely just a useful tool, not part of a "collection." If I added a 5th list for one item, that would be silly.
+Starred repos that aren't in any curated list. Some are useful but don't fit a collection; others I haven't engaged with enough to earn a list entry.
+
+- [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) — genuinely just a useful tool, not part of a "collection." A 1-item list would be silly.
+- [1mrnewton/cutlass](https://github.com/1mrnewton/cutlass) — Rust video editor by description. Interesting signal, not studied.
+- [AprilNEA/OpenLogi](https://github.com/AprilNEA/OpenLogi) — native Logitech mouse config. Useful-looking but I don't use it and haven't evaluated it.
+- [FuJacob/cotabby](https://github.com/FuJacob/cotabby) — local Mac autocomplete. Not used.
+- [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) — terminal AI coding agent. Not evaluated.
+- [Signet-AI/signetai](https://github.com/Signet-AI/signetai) — local-first identity/memory/secrets for agents. On the radar, not studied.
+- [clawsouls/soulspec](https://github.com/clawsouls/soulspec) — open standard for agent personas. On the radar, not studied.
+- [Vorim-AI-Labs/vorim-openclaw-skill](https://github.com/Vorim-AI-Labs/vorim-openclaw-skill) — OpenClaw skill for Vorim AI. Not evaluated.
 
 ## How I maintain this
 
