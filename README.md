@@ -589,7 +589,7 @@ Architecturally beautiful projects I do not depend on as dependencies. The bar i
 ### [JustVugg/colibri](https://github.com/JustVugg/colibri)
 - **What:** Pure-C inference engine that runs the full 744B GLM-5.2 MoE model on ~25 GB RAM + NVMe, streaming 21,504 routed experts from disk on demand.
 - **Why I starred:** The design is extreme — a 744B model on consumer RAM by treating experts as a disk-streamed layer. Compressed MLA KV-cache and native MTP speculative decoding make it architecturally interesting.
-- **How I engage:** `[Tracking]` Read the spec and community benchmarks. Haven't run it yet — lee-lab's 32 GB RAM is close to the boundary and the iGPU isn't the target. Filed for a future beefier machine.
+- **How I engage:** `[Tracking]` Read the spec and community benchmarks. Haven't run it yet — my host's 32 GB RAM is close to the boundary and the iGPU isn't the target. Filed for a future beefier machine.
 
 ## What's not on a list
 
