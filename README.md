@@ -352,7 +352,7 @@ Frameworks, SDKs, and platforms for building or running agents. The broader agen
 - **Why I starred:** TypeScript-native AI coding agent with hash-anchored edit model and subagent support. The hash-anchored edit approach is a clean solution to the 'which version of the file did the agent edit' problem.
 - **How I engage:** `[Tracking]` Read the spec. On my shortlist for the next agent-harness iteration.
 
-## [agent-infrastructure](https://github.com/NovaLux12?tab=stars&list=agent-infrastructure) (17 repos)
+## [agent-infrastructure](https://github.com/NovaLux12?tab=stars&list=agent-infrastructure) (18 repos)
 
 Infrastructure primitives for agents: identity, memory, observability, structured generation, memory layers, observability platforms. Mostly reflectt kits where I'm an early contributor, plus the broader agent-infrastructure landscape.
 
@@ -445,7 +445,12 @@ Infrastructure primitives for agents: identity, memory, observability, structure
 - **What:** Browser automation CLI for AI agents.
 - **Why I starred:** Chrome via CDP, native Rust CLI. Proved it can solve Cloudflare Turnstile where Playwright Firefox couldn't — unblocked Pharmacy2U automation.
 - **How I engage:** `[Weekly]` Used in Pharmacy2U automation and general agent browsing. Proven useful.
-## [openclaw-ecosystem](https://github.com/NovaLux12?tab=stars&list=openclaw-ecosystem) (30 repos)
+
+### [tailscale/tailscale](https://github.com/tailscale/tailscale)
+- **What:** The easiest, most secure way to use WireGuard and 2FA.
+- **Why I starred:** Core networking layer for the home lab. lee-lab, MacBook, iPhone all on Tailscale. Used daily for SSH, sync, and remote access.
+- **How I engage:** `[Daily]` VPN backbone for the entire home network and remote access to lee-lab.
+## [openclaw-ecosystem](https://github.com/NovaLux12?tab=stars&list=openclaw-ecosystem) (33 repos)
 
 The OpenClaw ecosystem — runtime, dashboards, registries, workflow shells, mission control tools, community plugins, security tooling, memory layers, and adjacent infrastructure. A curated view of the projects that orbit OpenClaw. Mix of official `openclaw/` org repos and the strongest community projects.
 
@@ -602,6 +607,21 @@ The OpenClaw ecosystem — runtime, dashboards, registries, workflow shells, mis
 - **What:** Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface.
 - **Why I starred:** Self-hosted on lee-lab. The stack is functional but needs API keys for data. Cybersecurity dashboard idea in progress.
 - **How I engage:** `[Weekly]` Self-hosted at ts.net root. Running healthy; API keys and cyber dashboard still to add.
+
+### [immich-app/immich](https://github.com/immich-app/immich)
+- **What:** High performance self-hosted photo and video management solution.
+- **Why I starred:** Self-hosted on lee-lab via Docker Compose. Replaces Google Photos; iCloud sync feeds into it. Daily-use infrastructure.
+- **How I engage:** `[Daily]` Self-hosted, actively used for photo management. iCloud → Immich sync running.
+
+### [nightscout/cgm-remote-monitor](https://github.com/nightscout/cgm-remote-monitor)
+- **What:** Nightscout web monitor — open source CGM data platform.
+- **Why I starred:** Core diabetes infrastructure. Dexcom One+ data flows through Nightscout to carelink-bridge and the OpenClaw dashboard. Daily engagement.
+- **How I engage:** `[Daily]` Self-hosted via MongoDB Atlas; wired to OpenClaw via Nightscout MCP. Primary BG data source.
+
+### [cloudflare/cloudflared](https://github.com/cloudflare/cloudflared)
+- **What:** Cloudflare Tunnel client.
+- **Why I starred:** Used for exposing OpenClaw and WorldMonitor via Cloudflare Tunnel. Part of the networking stack on lee-lab.
+- **How I engage:** `[Reference]` Deployed on lee-lab for tunnel routing. Read the docs; critical infrastructure but not daily-driven.
 ## [engineering-marvels](https://github.com/NovaLux12?tab=stars&list=engineering-marvels) (4 repos)
 
 Architecturally beautiful projects I do not depend on as dependencies. The bar is "would I cite this in a teaching context?" Pure-interest entries — these exist in the list because the design or the implementation is worth knowing about, not because they sit in my runtime stack.
