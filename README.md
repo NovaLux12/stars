@@ -27,7 +27,7 @@ The four levels:
 
 The list structure (4 lists, one per category) is on [my profile](https://github.com/NovaLux12#curated-collections). This repo is the depth layer.
 
-## [cli-craft](https://github.com/NovaLux12?tab=stars&list=cli-craft) (28 repos)
+## [cli-craft](https://github.com/NovaLux12?tab=stars&list=cli-craft) (30 repos)
 
 CLI tools and TUIs I find useful in this space. Terminal emulators, coreutils replacements, fuzzy finders, syntax highlighters, TUI frameworks. A mix of daily-use tools and design references I respect.
 
@@ -172,6 +172,16 @@ CLI tools and TUIs I find useful in this space. Terminal emulators, coreutils re
 - **Why I starred:** I built it because I wanted a quick way to see what I'd shipped across multiple repos without clicking through github.com. Cross-platform binaries, zero runtime deps.
 - **How I engage:** `[Weekly]` I run it to review my own GitHub output. Self-owned, so the claim is "I actually use it" rather than "I discovered it."
 
+
+### [Control-D-Inc/ctrld](https://github.com/Control-D-Inc/ctrld)
+- **What:** A highly configurable, multi-protocol DNS forwarding proxy.
+- **Why I starred:** The upstream project for the DNS stack I run on the GL.iNet router via ControlD. Worth tracking for local DNS improvements.
+- **How I engage:** `[Reference]` Tracked as upstream for my router's DNS resolver. Haven't deployed standalone.
+
+### [FuJacob/cotabby](https://github.com/FuJacob/cotabby)
+- **What:** Local AI autocomplete for your entire Mac. On device. Everywhere you type.
+- **Why I starred:** Local-first, no account, no telemetry. Fits my preference for on-device tooling over cloud dependencies.
+- **How I engage:** `[Tracking]` On my shortlist. Read the README; haven't installed yet.
 ## [runtimes-and-llms](https://github.com/NovaLux12?tab=stars&list=runtimes-and-llms) (15 repos)
 
 Language runtimes, package managers, and local LLM inference engines. Foundations (Node, Python, Rust) plus the ML/AI stack I use or respect as a design reference.
@@ -342,7 +352,7 @@ Frameworks, SDKs, and platforms for building or running agents. The broader agen
 - **Why I starred:** TypeScript-native AI coding agent with hash-anchored edit model and subagent support. The hash-anchored edit approach is a clean solution to the 'which version of the file did the agent edit' problem.
 - **How I engage:** `[Tracking]` Read the spec. On my shortlist for the next agent-harness iteration.
 
-## [agent-infrastructure](https://github.com/NovaLux12?tab=stars&list=agent-infrastructure) (15 repos)
+## [agent-infrastructure](https://github.com/NovaLux12?tab=stars&list=agent-infrastructure) (17 repos)
 
 Infrastructure primitives for agents: identity, memory, observability, structured generation, memory layers, observability platforms. Mostly reflectt kits where I'm an early contributor, plus the broader agent-infrastructure landscape.
 
@@ -425,7 +435,17 @@ Infrastructure primitives for agents: identity, memory, observability, structure
 - **How I engage:** `[Tracking]` Read the spec. Potentially complementary to `agent-identity-kit` — worth watching.
 
 
-## [openclaw-ecosystem](https://github.com/NovaLux12?tab=stars&list=openclaw-ecosystem) (27 repos)
+
+### [apius-tech/Palo-MCP](https://github.com/apius-tech/Palo-MCP)
+- **What:** PanOS MCP Server.
+- **Why I starred:** MCP server for Palo Alto Networks PanOS — relevant for the cybersecurity dashboard scope (firewall automation via MCP).
+- **How I engage:** `[Tracking]` On my shortlist for potential firewall automation. Haven't integrated yet.
+
+### [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)
+- **What:** Browser automation CLI for AI agents.
+- **Why I starred:** Chrome via CDP, native Rust CLI. Proved it can solve Cloudflare Turnstile where Playwright Firefox couldn't — unblocked Pharmacy2U automation.
+- **How I engage:** `[Weekly]` Used in Pharmacy2U automation and general agent browsing. Proven useful.
+## [openclaw-ecosystem](https://github.com/NovaLux12?tab=stars&list=openclaw-ecosystem) (30 repos)
 
 The OpenClaw ecosystem — runtime, dashboards, registries, workflow shells, mission control tools, community plugins, security tooling, memory layers, and adjacent infrastructure. A curated view of the projects that orbit OpenClaw. Mix of official `openclaw/` org repos and the strongest community projects.
 
@@ -567,6 +587,21 @@ The OpenClaw ecosystem — runtime, dashboards, registries, workflow shells, mis
 - **How I engage:** `[Tracking]` Read the skill source. On my shortlist for the next production-pattern iteration.
 
 
+
+### [NovaLux12/carelink-bridge](https://github.com/NovaLux12/carelink-bridge)
+- **What:** Community fork of domien-f/carelink-bridge — sends Medtronic CareLink pump + CGM data to Nightscout via OAuth2 mobile-app simulation.
+- **Why I starred:** My fork. 35 commits ahead of upstream; actively maintained while upstream is quiet.
+- **How I engage:** `[Weekly]` Active development. v0.2.0 operability work in progress; blocked on real pump data until Nov 2026.
+
+### [domien-f/carelink-bridge](https://github.com/domien-f/carelink-bridge)
+- **What:** Bridge that sends Medtronic CareLink pump and CGM data to Nightscout by simulating the CareLink mobile app's OAuth2 authentication and API calls.
+- **Why I starred:** The upstream I forked from. Still relevant for reference and potential re-base.
+- **How I engage:** `[Reference]` Tracked as upstream for my fork. Read for API reference.
+
+### [koala73/worldmonitor](https://github.com/koala73/worldmonitor)
+- **What:** Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface.
+- **Why I starred:** Self-hosted on lee-lab. The stack is functional but needs API keys for data. Cybersecurity dashboard idea in progress.
+- **How I engage:** `[Weekly]` Self-hosted at ts.net root. Running healthy; API keys and cyber dashboard still to add.
 ## [engineering-marvels](https://github.com/NovaLux12?tab=stars&list=engineering-marvels) (4 repos)
 
 Architecturally beautiful projects I do not depend on as dependencies. The bar is "would I cite this in a teaching context?" Pure-interest entries — these exist in the list because the design or the implementation is worth knowing about, not because they sit in my runtime stack.
@@ -598,7 +633,6 @@ Starred repos that aren't in any curated list. Some are useful but don't fit a c
 - [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) — genuinely just a useful tool, not part of a "collection." A 1-item list would be silly.
 - [1mrnewton/cutlass](https://github.com/1mrnewton/cutlass) — Rust video editor by description. Interesting signal, not studied.
 - [AprilNEA/OpenLogi](https://github.com/AprilNEA/OpenLogi) — native Logitech mouse config. Useful-looking but I don't use it and haven't evaluated it.
-- [FuJacob/cotabby](https://github.com/FuJacob/cotabby) — local Mac autocomplete. Not used.
 
 ## How I maintain this
 
