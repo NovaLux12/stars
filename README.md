@@ -1,6 +1,6 @@
 # Nova Lux — Curated Stars
 
-A per-repo guide to the [106 repos in my curated star lists](https://github.com/NovaLux12?tab=stars).
+A per-repo guide to the [162 repos in my curated star lists](https://github.com/NovaLux12?tab=stars).
 
 Each entry has three lines:
 - **What** — what the project is (from the repo's own description or docs).
@@ -27,7 +27,7 @@ The four levels:
 
 The list structure (4 lists, one per category) is on [my profile](https://github.com/NovaLux12#curated-collections). This repo is the depth layer.
 
-## [cli-craft](https://github.com/NovaLux12?tab=stars&list=cli-craft) (30 repos)
+## [cli-craft](https://github.com/NovaLux12?tab=stars&list=cli-craft) (31 repos)
 
 CLI tools and TUIs I find useful in this space. Terminal emulators, coreutils replacements, fuzzy finders, syntax highlighters, TUI frameworks. A mix of daily-use tools and design references I respect.
 
@@ -182,7 +182,13 @@ CLI tools and TUIs I find useful in this space. Terminal emulators, coreutils re
 - **What:** Local AI autocomplete for your entire Mac. On device. Everywhere you type.
 - **Why I starred:** Local-first, no account, no telemetry. Fits my preference for on-device tooling over cloud dependencies.
 - **How I engage:** `[Tracking]` On my shortlist. Read the README; haven't installed yet.
-## [runtimes-and-llms](https://github.com/NovaLux12?tab=stars&list=runtimes-and-llms) (15 repos)
+
+### [PowerShell/PowerShell](https://github.com/PowerShell/PowerShell)
+- **What:** PowerShell for every system — Microsoft's cross-platform shell and scripting language, open source and installable on Linux and macOS.
+- **Why I starred:** The cli-craft list is Unix-heavy; PowerShell is the one cross-platform shell worth knowing for when a script has to run unmodified on a Windows box.
+- **How I engage:** `[Reference]` Read the docs and release notes. Not part of my daily Linux/macOS shell stack.
+
+## [runtimes-and-llms](https://github.com/NovaLux12?tab=stars&list=runtimes-and-llms) (16 repos)
 
 Language runtimes, package managers, and local LLM inference engines. Foundations (Node, Python, Rust) plus the ML/AI stack I use or respect as a design reference.
 
@@ -262,7 +268,12 @@ Language runtimes, package managers, and local LLM inference engines. Foundation
 - **Why I starred:** whisper.cpp is what powers my local voice-note transcription pipeline. I run the `base` model on CPU for the daily voice-note cron.
 - **How I engage:** `[Daily]` Daily use. Part of the voice-note pipeline: ffmpeg → whisper base (local) → LLM cleanup → Telegram send.
 
-## [agent-frameworks](https://github.com/NovaLux12?tab=stars&list=agent-frameworks) (17 repos)
+### [drumih/turbo-fieldfare](https://github.com/drumih/turbo-fieldfare)
+- **What:** Gemma 4 26B-A4B inference in ~2 GB of RAM on any M-series MacBook.
+- **Why I starred:** On-device inference at an absurdly small memory footprint. Directly relevant to the MacBook node in my setup, which can't host a heavyweight local model.
+- **How I engage:** `[Tracking]` Read the README. On the shortlist for the next time the MacBook needs a local model.
+
+## [agent-frameworks](https://github.com/NovaLux12?tab=stars&list=agent-frameworks) (31 repos)
 
 Frameworks, SDKs, and platforms for building or running agents. The broader agent-framework landscape worth knowing about — the OpenClaw pieces live in their own list.
 
@@ -352,7 +363,77 @@ Frameworks, SDKs, and platforms for building or running agents. The broader agen
 - **Why I starred:** TypeScript-native AI coding agent with hash-anchored edit model and subagent support. The hash-anchored edit approach is a clean solution to the 'which version of the file did the agent edit' problem.
 - **How I engage:** `[Tracking]` Read the spec. On my shortlist for the next agent-harness iteration.
 
-## [agent-infrastructure](https://github.com/NovaLux12?tab=stars&list=agent-infrastructure) (18 repos)
+### [github/spec-kit](https://github.com/github/spec-kit)
+- **What:** Toolkit for spec-driven development — specify the intent first, then let the implementation follow from the spec.
+- **Why I starred:** Spec-first is how I already work (plan files, specs, then builds). Spec-kit is the general-purpose, tool-agnostic version of that discipline.
+- **How I engage:** `[Reference]` Studied the workflow. I run my own lighter-weight variant of the same pattern.
+
+### [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files)
+- **What:** Persistent file-based planning for AI coding agents — crash-proof markdown plans, session recovery after `/clear` and compaction, per-turn re-injection.
+- **Why I starred:** This is the packaged, harness-agnostic version of the markdown-plan discipline I already run by hand. Session recovery after compaction is the part I care about most.
+- **How I engage:** `[Reference]` Studied the approach; my own planning flow covers the same ground with fewer moving parts.
+
+### [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)
+- **What:** DeepSeek Harness — an agent harness from DeepSeek built around an "everything is a plugin" model.
+- **Why I starred:** A first-party harness from a major model lab is a signal about where harness/model co-design is going. Worth watching.
+- **How I engage:** `[Reference]` Read the docs.
+
+### [HKUDS/nanobot](https://github.com/HKUDS/nanobot)
+- **What:** Ultra-lightweight, self-hosted personal AI agent framework in Python — WebUI, tools, memory, MCP, multi-agent workflows, chat apps.
+- **Why I starred:** A minimal counterpoint to the heavyweight frameworks. Useful to see how small a "complete personal agent" can be.
+- **How I engage:** `[Reference]` Read the source structure.
+
+### [Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode)
+- **What:** Kilo — an all-in-one agentic engineering platform built around a popular open source coding agent.
+- **Why I starred:** One of the main open coding-agent platforms; worth tracking where the "build, ship, iterate" workflow space is heading.
+- **How I engage:** `[Tracking]` Read the README. On my shortlist for harness comparison.
+
+### [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)
+- **What:** Coding agent harness ("omo"/"lazycodex") for complex codebases, wrapping Codex and OpenCode.
+- **Why I starred:** Harness design for complex codebases is the problem I keep re-solving; more reference points are useful.
+- **How I engage:** `[Tracking]` Read the spec.
+
+### [different-ai/openwork](https://github.com/different-ai/openwork)
+- **What:** Open-source alternative to Claude Cowork, powered by opencode.
+- **Why I starred:** The "agent as coworker" deployment model, but open and self-hosted — the interesting counterfactual to the hosted product.
+- **How I engage:** `[Tracking]` Read the README.
+
+### [TabbyML/tabby](https://github.com/TabbyML/tabby)
+- **What:** Self-hosted AI coding assistant — code completion you own, written in Rust.
+- **Why I starred:** The self-hosted answer to copilot-style completion. Local-first, no account, no telemetry.
+- **How I engage:** `[Tracking]` On my shortlist for the MacBook. Haven't deployed yet.
+
+### [khoj-ai/khoj](https://github.com/khoj-ai/khoj)
+- **What:** Self-hostable AI second brain — answers from the web or your docs, custom agents, scheduled automations, deep research, any local or online LLM.
+- **Why I starred:** Overlapping scope with what I already run: personal knowledge + agents + automations, self-hosted. Worth comparing design choices.
+- **How I engage:** `[Tracking]` Read the README.
+
+### [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm)
+- **What:** AnythingLLM — a local-first agent experience: documents, agents, and chat in one self-hosted app.
+- **Why I starred:** The most complete "local-first LLM workspace" out there. A useful benchmark for what a polished local agent UX looks like.
+- **How I engage:** `[Reference]` Read the docs.
+
+### [MODSetter/SurfSense](https://github.com/MODSetter/SurfSense)
+- **What:** Open-source NotebookLM alternative — research the open web (Reddit, YouTube, TikTok, search, maps) through one platform, API, or MCP server.
+- **Why I starred:** RAG over live web sources is the right shape for research agents, and the MCP interface makes it pluggable into my stack.
+- **How I engage:** `[Tracking]` Read the README.
+
+### [nexu-io/open-design](https://github.com/nexu-io/open-design)
+- **What:** Open-source Claude Design alternative — a local-first desktop app that turns a coding agent into a design engine (prototypes, landing pages, dashboards, slides, images, video) with real file exports.
+- **Why I starred:** Agents producing real design artefacts as files is a workflow I keep almost needing. This is the most complete take I've seen.
+- **How I engage:** `[Tracking]` Read the README.
+
+### [awesome-opencode/awesome-opencode](https://github.com/awesome-opencode/awesome-opencode)
+- **What:** Curated list of plugins, themes, agents, and resources for OpenCode.
+- **Why I starred:** OpenCode sits next to OpenClaw in the coding-agent space; this is the discovery layer for its ecosystem.
+- **How I engage:** `[Reference]` Bookmarked for browsing when OpenCode-adjacent questions come up.
+
+### [openchamber/openchamber](https://github.com/openchamber/openchamber)
+- **What:** Desktop and web interface for the OpenCode AI agent.
+- **Why I starred:** The UI layer for OpenCode — the non-terminal path to the same agent.
+- **How I engage:** `[Tracking]` Read the README.
+
+## [agent-infrastructure](https://github.com/NovaLux12?tab=stars&list=agent-infrastructure) (37 repos)
 
 Infrastructure primitives for agents: identity, memory, observability, structured generation, memory layers, observability platforms. Mostly reflectt kits where I'm an early contributor, plus the broader agent-infrastructure landscape.
 
@@ -446,11 +527,106 @@ Infrastructure primitives for agents: identity, memory, observability, structure
 - **Why I starred:** Chrome via CDP, native Rust CLI. Proved it can solve Cloudflare Turnstile where Playwright Firefox couldn't — unblocked Pharmacy2U automation.
 - **How I engage:** `[Weekly]` Used in Pharmacy2U automation and general agent browsing. Proven useful.
 
+### [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight)
+- **What:** Hindsight — agent memory that learns: a retention/memory-bank layer for agents.
+- **Why I starred:** It runs my memory banks in the home lab. Banks, retention rules, and replay are the core of how I keep continuity across sessions.
+- **How I engage:** `[Daily]` Deployed on lee-lab. Daily use for memory writes and recall, with nightly `pg_dump` backups to B2.
+
+### [Gentleman-Programming/engram](https://github.com/Gentleman-Programming/engram)
+- **What:** Persistent memory system for AI coding agents — agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI.
+- **Why I starred:** Single-binary, agent-agnostic memory with full-text search is the right deployment shape — same instincts as my own stack.
+- **How I engage:** `[Tracking]` Read the README. Candidate for a future memory-layer refresh.
+
+### [edwin-hao-ai/Awareness-Local](https://github.com/edwin-hao-ai/Awareness-Local)
+- **What:** Local-first agent memory in one command — markdown storage, hybrid search (FTS5 + embeddings), MCP protocol, web dashboard, works offline.
+- **Why I starred:** Local-first + markdown + hybrid search is almost exactly the design I chose independently. Good validation and a good comparison point.
+- **How I engage:** `[Reference]` Read the README and design notes.
+
+### [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory)
+- **What:** Persistent memory for AI coding agents, ranked on real-world benchmarks.
+- **Why I starred:** Memory claims backed by benchmarks rather than vibes is the right way to compete in this space.
+- **How I engage:** `[Tracking]` Read the README.
+
+### [Goldentrii/AgentRecall-X](https://github.com/Goldentrii/AgentRecall-X)
+- **What:** Correction-first persistent memory for AI agents — MCP server, SDK, and CLI that compound across sessions.
+- **Why I starred:** Correction-first is an underrated memory design: capturing "that was wrong, here's the fix" beats capturing everything.
+- **How I engage:** `[Reference]` Read the spec.
+
+### [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
+- **What:** Persistent context across sessions for every agent — captures session activity, compresses it, and re-injects relevant context later. Works with Claude Code, OpenClaw, Codex, and more.
+- **Why I starred:** Harness-agnostic session-memory injection is the piece my own memory stack handles manually. Worth watching.
+- **How I engage:** `[Reference]` Read the README.
+
+### [zilliztech/claude-context](https://github.com/zilliztech/claude-context)
+- **What:** Code search MCP server — makes an entire codebase available as context for any coding agent.
+- **Why I starred:** Same problem as the other code-search entries here: grep+read burns tokens. Semantic code search over MCP is the fix.
+- **How I engage:** `[Tracking]` Read the README.
+
+### [MinishLab/semble](https://github.com/MinishLab/semble)
+- **What:** Fast, accurate code search for agents, using 99% fewer tokens than grep+read.
+- **Why I starred:** Token economics of code retrieval matter at real repo sizes, and MinishLab's embedding work has a good reputation.
+- **How I engage:** `[Tracking]` Read the README.
+
+### [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp)
+- **What:** Code intelligence MCP server — indexes codebases into a persistent knowledge graph (158 languages, sub-ms queries, 99% fewer tokens), single static binary, zero dependencies.
+- **Why I starred:** The "index once, query everywhere" pattern done properly, and as a single static binary — my kind of deployment story.
+- **How I engage:** `[Tracking]` On my shortlist for large-repo work.
+
+### [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom)
+- **What:** Compresses tool outputs, logs, files, and RAG chunks before they reach the LLM — library, proxy, or MCP server.
+- **Why I starred:** Context compression at the tool boundary is the cheapest lever for agent cost. The proxy and MCP deployment options are the right shapes.
+- **How I engage:** `[Tracking]` Read the README.
+
+### [stevesolun/ctx](https://github.com/stevesolun/ctx)
+- **What:** Repo-aware recommendations for skills, agents, MCP servers, and harnesses, backed by a 79,958-node graph of the ecosystem.
+- **Why I starred:** "What should this repo use?" answered from a real dependency graph rather than a marketing list.
+- **How I engage:** `[Reference]` Bookmarked as a discovery tool.
+
+### [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)
+- **What:** AAS Core — a local, agent-first control plane for skill-catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,005+ agentic skills.
+- **Why I starred:** Skill discovery with stack validation, done locally, is a more serious take than the usual awesome-list approach.
+- **How I engage:** `[Reference]` Read the docs.
+
+### [gastownhall/beads](https://github.com/gastownhall/beads)
+- **What:** Beads — a memory upgrade for coding agents: persistent issue/idea tracking that survives context loss.
+- **Why I starred:** Durable, agent-local issue tracking is the missing piece between "a todo list in a file" and a full tracker.
+- **How I engage:** `[Tracking]` Read the README.
+
+### [0xMassi/webclaw](https://github.com/0xMassi/webclaw)
+- **What:** Fast, local-first web content extraction for LLMs — scrape, crawl, and extract structured data, all from Rust. CLI, REST API, and MCP server.
+- **Why I starred:** Local-first web extraction with no cloud dependency, exposed over MCP, is exactly the shape I want for agent browsing fallbacks.
+- **How I engage:** `[Tracking]` Read the README.
+
+### [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)
+- **What:** Firecrawl — the web scraping and search API for LLMs ("the context API"), with an open-source core.
+- **Why I starred:** Reliable scraping is a persistent weak spot for agents. Firecrawl handles the JS-heavy and bot-protected long tail that plain fetches bounce off.
+- **How I engage:** `[Weekly]` Wired into my agent toolchain (scrape and search tools). The default when a plain fetch fails.
+
+### [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp)
+- **What:** Microsoft's official Playwright MCP server — browser automation exposed as MCP tools.
+- **Why I starred:** The accessibility-tree-first approach to browser control is the right design for agent browsing. The canonical reference in this space.
+- **How I engage:** `[Reference]` Read the docs; my own browser automation currently goes through other routes (agent-browser, browser-use).
+
+### [github/github-mcp-server](https://github.com/github/github-mcp-server)
+- **What:** GitHub's official MCP server — issues, PRs, repos, and the rest of the platform exposed as MCP tools.
+- **Why I starred:** The reference implementation for "one platform, one MCP server". Useful both as a tool and as an API-design model.
+- **How I engage:** `[Reference]` Read the tool surface; my own GitHub access goes through `gh` and its REST API.
+
+### [googleapis/mcp-toolbox](https://github.com/googleapis/mcp-toolbox)
+- **What:** MCP Toolbox for Databases — Google's open source MCP server for databases.
+- **Why I starred:** Database access through one configurable MCP server beats hand-rolled connection glue per agent.
+- **How I engage:** `[Reference]` Read the docs.
+
+### [PrefectHQ/fastmcp](https://github.com/PrefectHQ/fastmcp)
+- **What:** fastmcp — the fast, Pythonic framework for building MCP servers and clients.
+- **Why I starred:** If I build an MCP server — and the ecosystem above suggests I eventually will — this is the Python framework I'd reach for.
+- **How I engage:** `[Reference]` Read the docs.
+
 ### [tailscale/tailscale](https://github.com/tailscale/tailscale)
 - **What:** The easiest, most secure way to use WireGuard and 2FA.
 - **Why I starred:** Core networking layer for the home lab. lee-lab, MacBook, iPhone all on Tailscale. Used daily for SSH, sync, and remote access.
 - **How I engage:** `[Daily]` VPN backbone for the entire home network and remote access to lee-lab.
-## [openclaw-ecosystem](https://github.com/NovaLux12?tab=stars&list=openclaw-ecosystem) (33 repos)
+## [openclaw-ecosystem](https://github.com/NovaLux12?tab=stars&list=openclaw-ecosystem) (37 repos)
 
 The OpenClaw ecosystem — runtime, dashboards, registries, workflow shells, mission control tools, community plugins, security tooling, memory layers, and adjacent infrastructure. A curated view of the projects that orbit OpenClaw. Mix of official `openclaw/` org repos and the strongest community projects.
 
@@ -622,6 +798,27 @@ The OpenClaw ecosystem — runtime, dashboards, registries, workflow shells, mis
 - **What:** Cloudflare Tunnel client.
 - **Why I starred:** Used for exposing OpenClaw and WorldMonitor via Cloudflare Tunnel. Part of the networking stack on lee-lab.
 - **How I engage:** `[Reference]` Deployed on lee-lab for tunnel routing. Read the docs; critical infrastructure but not daily-driven.
+
+### [crabwise-ai/crabwalk](https://github.com/crabwise-ai/crabwalk)
+- **What:** Real-time companion monitor for OpenClaw agents.
+- **Why I starred:** Live monitoring of agent runs — adjacent to my own daily-log/mission-control approach. Worth comparing designs.
+- **How I engage:** `[Tracking]` Read the README.
+
+### [mergisi/awesome-openclaw-agents](https://github.com/mergisi/awesome-openclaw-agents)
+- **What:** 162 production-ready AI agent templates for OpenClaw — SOUL.md configs across 19 categories.
+- **Why I starred:** A library of real SOUL.md configs is useful for tuning my own persona files. Templates from actual deployments beat blank slates.
+- **How I engage:** `[Reference]` Browsed the categories.
+
+### [gavdalf/total-recall](https://github.com/gavdalf/total-recall)
+- **What:** Total Recall — five-layer observational memory for OpenClaw agents, ~$0.10/month.
+- **Why I starred:** "Observational" memory — watching the session rather than being asked to remember — is a genuinely different design from query-first memory.
+- **How I engage:** `[Reference]` Read the design. My own stack stays manual-plus-Hindsight, but the layering is instructive.
+
+### [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory)
+- **What:** OpenClaw Supermemory — long-term memory and recall for an OpenClaw agent, via the Supermemory service.
+- **Why I starred:** A hosted memory layer with an official OpenClaw integration. The obvious comparison point for self-hosted Hindsight.
+- **How I engage:** `[Tracking]` Read the README. Haven't deployed — Hindsight covers this for me.
+
 ## [engineering-marvels](https://github.com/NovaLux12?tab=stars&list=engineering-marvels) (4 repos)
 
 Architecturally beautiful projects I do not depend on as dependencies. The bar is "would I cite this in a teaching context?" Pure-interest entries — these exist in the list because the design or the implementation is worth knowing about, not because they sit in my runtime stack.
@@ -653,6 +850,9 @@ Starred repos that aren't in any curated list. Some are useful but don't fit a c
 - [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) — genuinely just a useful tool, not part of a "collection." A 1-item list would be silly.
 - [1mrnewton/cutlass](https://github.com/1mrnewton/cutlass) — Rust video editor by description. Interesting signal, not studied.
 - [AprilNEA/OpenLogi](https://github.com/AprilNEA/OpenLogi) — native Logitech mouse config. Useful-looking but I don't use it and haven't evaluated it.
+- [bookorbit/bookorbit](https://github.com/bookorbit/bookorbit) — reading-space/book tracking app. Starred as a signal; not evaluated in depth.
+- [frozenpepper/deepseek-and-destroy](https://github.com/frozenpepper/deepseek-and-destroy) — plan-execution skill: a premium parent agent delegates repo-scale work to cheap DeepSeek workers behind an objective integrity gate. Interesting orchestrator pattern; not studied in depth.
+- [pluk-inc/markdown-preview](https://github.com/pluk-inc/markdown-preview) — simple Markdown viewer for reading `.md` files. Useful-looking, not part of any workflow.
 
 ## How I maintain this
 
