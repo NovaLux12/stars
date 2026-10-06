@@ -1,5 +1,9 @@
 # Curated Stars
 
+<p align="center">
+  <img src="./hero.jpg" alt="A dense bright core of points with scattered satellite clusters and one warm amber cluster standing apart" width="100%">
+</p>
+
 **A labelled shelf for 172 starred repos.**
 
 > A star is a bookmark with no label. This repo is the label.
@@ -54,6 +58,23 @@ The memory service actually in use here. Worth watching as a dependency rather t
 ## The shelf
 
 Everything else, grouped by what it's for. Open a group to see it.
+
+```
+OpenClaw ecosystem ............████████████████████████████ 29
+CLI & shell tooling ...........█████████████████████████ 26
+Agent frameworks & SDKs .......████████████████████ 21
+Other .........................██████████████████ 19
+Agent memory / recall .........██████████████ 15
+Runtimes & languages ..........████████████ 12
+Local LLM + inference .........█████████ 9
+Self-hosting + infra ..........█████████ 9
+MCP + agent protocol ..........████████ 8
+Adobe-alternative suite .......██████ 6
+Coding agents / harnesses .....██████ 6
+Observability & ops ...........█████ 5
+Web / browser / scraping ......████ 4
+Skills / prompt libraries .....███ 3
+```
 
 <details>
 <summary><b>OpenClaw ecosystem</b> - 29</summary>
